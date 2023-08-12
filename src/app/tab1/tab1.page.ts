@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  title : string;
+  subtitle: string;
+  hero : string;
+  heroes = ['Arturo','Lancelot','Steve','Kratos']
+  
+  constructor() {
+    this.title = 'Hola Mundo';
+    this.subtitle = 'Lore ipsum';
+    this.hero = this.heroes[0];
 
-  constructor() {}
+  }
 
 }

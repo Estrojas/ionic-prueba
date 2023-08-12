@@ -7,9 +7,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <h1>{{title}}</h1>
+  <p>{{subtitle}}</p>
+  <p>La lista de Heroes es:</p>
+  <ul>
+    <li *ngFor="let hero of heroes">
+    {{hero}}
+    </li>
+  </ul>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
+      
+    
     </ion-toolbar>
   </ion-header>
 
